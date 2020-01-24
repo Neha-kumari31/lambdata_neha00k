@@ -2,6 +2,7 @@
 import pandas as pd
 def list_to_column(df, mylist):
     """
+    function to add mylist into a dataframe as a new column
     """
     new_col = pd.Series(mylist)
     df['new_col'] = new_col.values
